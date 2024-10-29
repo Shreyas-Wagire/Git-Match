@@ -1,5 +1,7 @@
 # GitMatch
 
+![GitMatch Screenshot](public/img/image.png)
+
 GitMatch is a web application that allows users to search for GitHub profiles using their usernames. The app retrieves and displays detailed information about the user, including their repositories, location, and social media links.
 
 ## Features

@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# GitProfile Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GitProfile Finder is a web application that allows users to search for GitHub profiles using their usernames. The app retrieves and displays detailed information about the user, including their repositories, location, and social media links.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for GitHub profiles by username.
+- Display user profile information including:
+  - Username
+  - Avatar
+  - Bio
+  - Location
+  - Followers and following count
+  - Public repositories
+  - Links to social media profiles
+- Responsive design with Tailwind CSS for a clean and modern user interface.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React, TypeScript, Tailwind CSS, Shadcn
+- **Build Tool**: Vite
+- **API**: GitHub REST API
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To get a copy of this project up and running on your local machine, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Make sure you have the following installed:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/git-profile-finder.git
+   cd git-profile-finder
+

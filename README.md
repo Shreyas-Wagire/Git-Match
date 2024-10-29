@@ -38,10 +38,19 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/git-profile-finder.git
-   
+
+2. Go to Folder
+
+   ```bash
    cd git-profile-finder
-   
+
+3. Install all Files
+
+   ```bash
    npm install
 
+4. Run the code
+   
+   ```bash
    npm run dev
 
